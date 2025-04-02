@@ -1,0 +1,28 @@
+{{attach_library("gavias_meipaly/news-css")}}
+
+{% if node.field_news_video.entity.field_media_video_file.entity.fileUri %}
+	<div class="blog-post-item-details">
+		<div class="timenewpage-details">发布于：{{ content.field_created_at }}</div>
+		<div class="mypost-thumbnail-details">
+			<div class="new-view-video-details">
+				<video class="new-video-details" src="{{file_url(node.field_news_video.entity.field_media_video_file.entity.fileUri)}}" loop autoplay muted playsinline></video>
+			</div>
+		</div>
+		<div class="entry-content-details">
+			{{node.field_news_content.value | raw}}
+		</div>
+	</div>
+{% else %}
+	<div class="blog-post-item-details">
+		<div class="timenewpage-details">发布于：{{ content.field_created_at }}</div>
+		<div class="mypost-thumbnail-details">
+			<div class="new-view-img-details">
+				<img src="{{file_url(node.field_image.entity.uri.value)}}" alt="Blog-preview">
+			</div>
+		</div>
+		<div class="entry-content-details">
+			{{node.field_news_content.value | raw}}
+		</div>
+
+	</div>
+{% endif %}

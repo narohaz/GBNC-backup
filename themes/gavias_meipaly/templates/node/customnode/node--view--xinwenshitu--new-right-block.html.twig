@@ -1,0 +1,52 @@
+
+{% if node.field_xinwenshipin.entity.field_media_video_file.entity.fileUri %}
+<div class="right-blog-post-item">
+    <div class="right-mypost-thumbnail">
+        <div class="right-new-view-video">
+            <a href="{{url}}">
+            <video class="right-new-video"
+                src="{{file_url(node.field_xinwenshipin.entity.field_media_video_file.entity.fileUri)}}" loop autoplay muted playsinline>
+            </video>
+            </a>
+            <div class="toptags"></div>
+        </div>
+    </div>
+    <div class="right-entry-content">
+        <a href="{{url}}">
+        {{node.body.value | raw}}
+        </a>
+        <div class="newtimea">
+        <a href="{{url}}" class="blog-date">
+        <div class="timeicon gv-icon-1104"></div>
+        {{node.field_xinwenshijian.value}}
+        </a>
+        </div>
+    </div>
+</div>
+
+{% else %}
+
+<div class="right-blog-post-item">
+    <div class="right-mypost-thumbnail">
+        <div class="right-new-view-img">
+            <a href="{{url}}">
+            <img src="{{file_url(node.field_xinwentu.entity.uri.value)}}" alt="Blog-preview">
+            </a>
+            <div class="toptags"></div>
+        </div>
+        
+    </div>
+    <div class="right-entry-content">
+        <a href="{{url}}">
+        {{node.body.value | raw}}
+        </a>
+        <div class="newtimea">
+        <a href="{{url}}" class="blog-date">
+        <div class="timeicon gv-icon-1104"></div>
+        {{node.field_xinwenshijian.value}}
+        </a>
+        </div>
+    </div>
+
+</div>
+{% endif %}

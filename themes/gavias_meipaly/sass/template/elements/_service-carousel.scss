@@ -1,0 +1,184 @@
+.icon_flipper{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -ms-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: all ease 400ms;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+  .back, .front{
+    i{
+      font-size: 64px;
+      line-height: 1;
+      color: #aaaaaa;
+      display: block;
+      margin-bottom: 17px;
+      transition: all ease 400ms;
+      -moz-transition: all ease 400ms;
+      -webkit-transition: all ease 400ms;
+    }
+    h3{
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #aaaaaa;
+      margin: 0;
+      transition: all ease 400ms;
+      -moz-transition: all ease 400ms;
+      -webkit-transition: all ease 400ms;
+    }
+  }
+  .flipper {
+    -webkit-transform-origin: 100% 213.5px;
+    -moz-transform-origin: 100% 213.5px;
+    -ms-transform-origin: 100% 213.5px;
+    transform-origin: 100% 213.5px;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 230px;
+  }
+  .front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    background: transparent;
+    z-index: 2;
+    border: 2px solid rgba(27, 27, 27, 1);
+    padding: 48px 45px 45px;
+    width: 100%;
+  }
+  .back {
+    background: #e62b4a;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    position: relative;
+    padding: 48px 45px 45px;
+    border: 2px solid #e62b4a;
+    width: 100%;
+    i, h3{
+      color: $white;
+    }
+  }
+  &:hover, &.hover{
+    .front{
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    .back {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+.gsc-service-carousel{
+  text-align: center;
+  &.style-1{
+    .item{
+      .content-inner{
+        position: relative;
+        .overlay-link{
+          position: absolute;
+          @include size(100%, 100%);
+          top: 0;
+          left: 0;
+          z-index: 11;
+        }
+      }
+    }
+    .read-more{
+      margin-top: 30px;
+    }
+  }
+  &.style-2{
+    .serivce-icon-2{
+      padding: 50px 20px;
+      border: 2px solid #F4F4F4;
+      position: relative;
+      transition: all 0.35s;
+      margin: 10px 0;
+      &:after{
+        content: '';
+        @include size(4px, 0);
+        background: $theme-color;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+        transition: all 0.35s;
+      }
+      .service-content{
+        max-width: 230px;
+        margin: 0 auto;
+        .title{
+          font-size: 20px;
+          text-transform: uppercase;
+          margin-bottom: 35px;
+        }
+        .icon{
+          font-size: 70px;
+          color: $black;
+        }
+        .box-action-link{
+          display: block;
+          margin-top: 5px;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+      }
+      &:hover{  
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  
+        &:after{
+          height: 100%;
+        }
+      }
+    } 
+  }
+}

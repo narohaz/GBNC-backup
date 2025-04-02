@@ -1,0 +1,148 @@
+html{
+  overflow-x: hidden!important;
+}
+body{
+  overflow: hidden!important;
+  position: relative;
+  &.boxed{ 
+    background-color: #EAF1F7;  
+    div.gva-body-wrapper{
+      background: $white;
+      max-width: 1440px;  
+      margin: 0 auto;
+      @include box-shadow(0px 2px 6px 2px rgba(0, 0, 0, 0.05));
+      position: relative;
+    }
+  }
+  .body-page{
+    background-color: #fff;
+  }
+  &.logged-in{
+    &.toolbar-horizontal{ 
+      .header-v2{
+        top: 39px;
+      }
+    }
+  }
+  &.bg-dark{
+    background: #EFF1F2;
+    .gva-body-page{
+      background: #EFF1F2;
+    }
+  }
+}
+
+.language-box{
+  .links{
+    > li{
+      margin-right: 10px;
+      @include opacity(0.6);
+      line-height: 1;
+      margin-top: 5px;
+      float: right;
+      &.is-active{
+        @include opacity(1);
+      }
+    }
+  }
+}
+
+body.logged-in{
+  &.toolbar-horizontal{
+    .gva-quick-side{
+      padding-top: 90px;
+    }
+  }
+}
+
+.area{
+  &.slideshow_content{
+    .block{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.area-panel{
+  padding: 30px 0;
+}
+
+.header-right{
+  .block{
+    margin-bottom: 0;
+  }
+}
+
+.promotion{
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#page-main-content{
+  min-height: 360px;
+  @include media-breakpoint-down(sm){
+    min-height: 100px;
+  }
+}
+
+.main-menu{
+  .area-main-menu{
+    .area-inner{
+      .block{
+        margin-bottom: 0;
+      }
+    }  
+  }
+}  
+
+.sidebar{
+  position: relative;
+}
+
+
+#footer{
+  color: #aaa; 
+  background: #000;
+  a{
+    color: #aaa;
+    &:hover, &:focus{
+      color: $theme-color;
+    }
+  }
+  .footer-top{
+    background: #000;
+    padding: 40px 0;
+  }
+  .before-footer{
+    padding: 0;
+  }
+  .footer-center{
+    padding: 80px 0 80px;
+  }
+
+  .block{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .block-title{
+      span{
+        color: $white!important;
+        &:after, &:before{
+          display: none;
+        }
+      }
+    }
+  }
+  .copyright{
+    font-size: 14px;
+    font-weight: 500;
+    .copyright-inner{
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+  @include media-breakpoint-down(md){
+    .footer-column{
+      margin-bottom: 45px;
+    }
+  }
+}

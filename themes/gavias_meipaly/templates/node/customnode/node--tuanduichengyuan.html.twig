@@ -1,0 +1,16 @@
+
+{{attach_library("gavias_meipaly/teampage-css")}}
+<div class="tema-page-details">
+    <div class="tema-page-details-left">
+        <img src="{{file_url(node.field_chengyuanzhaopian.entity.uri.value)}}" alt="">
+        <div class="tema-page-details-left-img-text">
+            <div class="tema-page-details-left-img-text-name">{{node.title.value}}</div>
+            <div class="tema-page-details-left-img-text-join">{{node.field_chengyuanzhiwei.0.value}}</div>
+        </div>
+    </div>
+    <div class="tema-page-details-right">
+        <div class="about-me-title">about me</div>
+        <div class="about-me-content">{{node.body.value | raw}}</div>
+    </div>
+</div>
+

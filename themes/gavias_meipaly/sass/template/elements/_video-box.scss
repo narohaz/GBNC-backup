@@ -1,0 +1,51 @@
+.gsc-video-box{
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  .video-content{
+    .popup-video{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -85px;
+      z-index: 19; 
+      text-align: center;
+      display: inline-block;
+      @include media-breakpoint-down(sm){
+        margin-top: -43px;
+      }
+      .icon{
+        @include size(100px, 100px);
+        background: $theme-color;
+        color: $white;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        z-index: 1;
+        display: inline-block;
+        @include media-breakpoint-down(sm){
+          @include size(50px, 50px);
+          line-height: 50px;
+          font-size: 24px;
+        }
+      }
+      .title{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        display: block;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        @include media-breakpoint-down(sm){
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .video-inner{
+    @include box-shadow(0px 0px 10px 3px rgba(0, 0, 0, 0.1));
+    position: relative;
+  }
+}

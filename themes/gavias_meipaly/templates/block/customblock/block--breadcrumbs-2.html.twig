@@ -1,0 +1,36 @@
+{% set title_classes = '' %}
+{% if label == '' %}
+	{% set title_classes = 'no-title' %}
+{% endif %}
+{%
+  set classes = [
+    'block gva-block-breadcrumb',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    title_classes
+  ]
+%}
+
+
+<div class="breadcrumb-content-inner">
+	<div class="gva-breadcrumb-content">
+		<div{{attributes.addClass(classes)}}>
+			<div class="breadcrumb-style gva-parallax-background mybg-breadcrumb">
+				<img
+				class="mybg-img" src="/themes/gavias_meipaly/images/human-helix-dna-structure-concept-blue-color.jpg"/>
+				{# <div class="container">
+									<div class="breadcrumb-content-main">
+										{% block content %}
+											<div class="{{ custom_classes }}">
+												<div{{content_attributes.addClass('contentblock-content')}}>{{ content }}</div>
+											</div>
+										{% endblock %}
+										<h2 class="page-title">{{ breadcrumb_title }}
+										</h2>
+									</div>
+								</div> #}
+				<div class="gva-parallax-inner skrollable skrollable-between" data-bottom-top="top: -80%;" data-top-bottom="top: 0%;"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,75 @@
+.tema-page-details-left {
+    position: relative;
+    flex: 1 1 40%;
+    width: 40%;
+}
+.tema-page-details {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+.tema-page-details-left img {
+    width: 100%;
+    height: 500px;
+    object-position: 0 -10px;
+    object-fit: cover;
+}
+
+
+.tema-page-details-left-img-text {
+    position: absolute;
+    bottom: 40px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 15px 15px;
+}
+.tema-page-details-left {
+    position: relative;
+    flex: 1 1 30%;
+    width: 30%;
+}
+
+.tema-page-details-left-img-text-name {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #0E1E2A;
+    font-weight: 600;
+}
+.tema-page-details-left-img-text-join {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #67687A;
+}
+.about-me-title {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 1.08px;
+    margin-bottom: 14px;
+    color: #0E1E2A;
+}
+.about-me-content p {
+    font-family: "Lato";
+    font-size: 17px;
+    font-weight: 400;
+    color: #67687A;
+    line-height: 32px;
+    padding-right: 40px;
+}
+.about-me-title::after {
+    content: "a";
+    left: -24px;
+    top: -30px;
+    text-transform: uppercase;
+    color: rgba(26, 118, 209,0.1);
+    position: absolute;
+    width: fit-content;
+    font-size: 70px;
+}

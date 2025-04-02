@@ -1,0 +1,371 @@
+
+
+
+
+.recruit-details {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    max-width: 800px;
+}
+
+.recruit-details-img {
+    border-bottom: solid 1px #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.recruit-details-content {
+    max-width: 800px;
+}
+
+.recruit-details-img img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 35px;
+}
+
+.enterprise-name {
+    color: #000;
+    font-family: 'Lato';
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.1818;
+    letter-spacing: 0;
+
+}
+
+p.recruit-post {
+    color: #000;
+    font-family: 'Lato';
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.recruit-adrr-icon-time {
+    display: flex;
+    gap: 60px;
+}
+
+.recruit-adrr-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.recruit-adrr-icon p {
+    margin-bottom: 0px;
+    font-family: 'Lato';
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.recruit-times {
+    font-family: 'Lato';
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.recruit-details-body {
+    margin-top: 60px;
+}
+
+.recruit-details-body li {
+    font-family: 'Lato';
+    color: #656565;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.recruit-details-body h2 {
+    position: relative;
+    color: #00132A;
+    font-weight: 400;
+    margin-bottom: 18px;
+    line-height: 35px;
+    font-family: 'Lato';
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+.recruit-details-body p {
+    display: list-item;
+    font-family: 'Lato';
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-left: 28px;
+    margin-bottom: 0px;
+}
+
+.recruit-details-body h2::after {
+    content: '';
+    background-color: #D9142B;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.recruit-details-wapper-page {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+
+/*上传下载*/
+  .upload-file-box label#edit-field-job-application-file-0--label {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .upload-file-box .description {
+        max-width: 594px;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: 400;
+        color: #d9142b;
+        margin-top: 10px;
+    }
+
+    .upload-file-box .form-actions {
+        margin-top: 15px;
+    }
+
+    .upload-file-box input.button {
+        border: none;
+        font-size: 15px;
+        font-weight: 400;
+        background: #1da1f2;
+        color: #fff;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 15px 20px;
+        letter-spacing: 1.3px;
+        position: relative;
+        outline: none;
+        transition: all 0.4s ease-out;
+        border-right: 4px solid #d9142b;
+        cursor: pointer;
+    }
+
+    .upload-file-box .vertical-tabs.clearfix {
+        display: none;
+    }
+
+    .myclose-box {
+        position: absolute;
+        right: 22px;
+        top: 15px;
+        font-size: 35px;
+        color: #1da1f2;
+        cursor: pointer;
+    }
+
+    .upload-download-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        width: 600px;
+        padding: 40px;
+        border-radius: 5px;
+    }
+    .dowlod-img img {
+    max-width: 40px;
+}
+.download-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1da1f2;
+    margin-bottom: 20px;
+}
+.download-body p {
+    max-width: 594px;
+    font-size: 22px;
+    font-family: "Lato";
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+    padding-right: 35px;
+}
+.myclose-box {
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    font-size: 35px;
+    color: #1da1f2;
+    cursor: pointer;
+}
+.upload-download-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 600px;
+    padding: 40px;
+    border-radius: 5px;
+}
+.fiexd-boxs {
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 66, 117, 0.5);
+    display: none;
+}
+.download-item span a {
+    max-width: 594px;
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #666666;
+}
+
+.download-item span {
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 400;
+    color: rebeccapurple;
+}
+.download-a {
+    width: 75px;
+    height: 30px;
+    background: #1da1f2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+}
+.download-a a {
+    color: #fff;
+}
+input#edit-preview {
+    display: none;
+}
+
+.custom-zhiwei-btn {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background: #fff;
+    margin-top: 20px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 38px;
+    display: inline-block;
+    line-height: .8;
+    letter-spacing: 1.6px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease-out;
+    border-right: 4px solid #50AF4D;
+}
+
+@media screen and (max-device-width:1920px) {
+    .recruit-details-img img {
+        max-width: 120px;
+    }
+    .recruit-details {
+        padding-top: 30px;
+    }
+    .recruit-details {
+        gap: 30px;
+    }
+    .enterprise-name {
+        font-size: 17px;
+    }
+    p.recruit-post {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .recruit-details-body {
+        margin-top: 35px;
+    }
+    .recruit-times {
+        font-size: 14px;
+    }
+    .recruit-details-body li {
+        color: #000;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .recruit-details-body p {
+        color: #000;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .recruit-times {
+font-size: 16px;
+}
+    .recruit-details-body p {
+font-size: 17px;
+}
+    p.recruit-post {
+font-size: 17px;
+}
+    .enterprise-name {
+font-size: 19px;
+font-weight: 600;
+}
+    .recruit-details-body li {
+            color: #656565;
+font-size: 16px;
+}
+}
+
+@media screen and (max-width:768px) {
+    
+    .recruit-details {
+        flex-wrap: wrap;
+    }
+
+    .recruit-details {
+        padding-top: 50px;
+    }
+
+    p.recruit-post {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: #1da1f2;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .recruit-times {
+        width: 100%;
+    }
+
+    .recruit-adrr-icon-time {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+{{attach_library("gavias_meipaly/recruit-css")}}
+<div class="recruit-details-wapper-page">
+	<div class="recruit-details">
+		<div class="recruit-details-img wow fadeInLeft animated">
+			<img src="{{file_url(node.field_employer_logo.entity.uri.value)}}" alt="">
+		</div>
+		<div class="recruit-details-content">
+			<p class="enterprise-name wow fadeInUp animated">{{node.field_employer.0.value}}</p>
+			<p class="recruit-post wow fadeInUp animated">{{node.title.value}}</p>
+			<div class="recruit-adrr-icon-time">
+				<div class="recruit-adrr-icon wow fadeInUp animated">
+					<img src="/sites/default/files/custom-img/location-black.svg" alt="">
+					<p>{{node.field_job_location.0.value}}</p>
+				</div>
+				<div class="recruit-times wow fadeInUp animated">Posted On
+					{{node.field_date_posted.0.value}}
+				</div>
+			</div>
+			<div class="recruit-details-body wow fadeInUp animated">{{node.field_job_posting.0.value | raw}}</div>
+
+		</div>
+	</div>
+</div>

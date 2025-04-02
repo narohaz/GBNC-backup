@@ -1,0 +1,50 @@
+{{attach_library("gavias_meipaly/news-css")}}
+{% if node.field_news_video.entity.field_media_video_file.entity.fileUri %}
+	<div class="right-blog-post-item">
+		<div class="right-mypost-thumbnail">
+			<div class="right-new-view-video">
+				<a href="{{url}}">
+					<video class="right-new-video" src="{{file_url(node.field_news_video.entity.field_media_video_file.entity.fileUri)}}" loop autoplay muted playsinline></video>
+				</a>
+				<div class="toptags"></div>
+			</div>
+		</div>
+		<div class="right-entry-content">i
+			<a href="{{url}}">
+				{{node.field_news_content.value | raw}}
+			</a>
+			<div class="newtimea">
+				<a href="{{url}}" class="blog-date">
+					<div class="timeicon gv-icon-1104"></div>
+					{{node.field_field_image.value}}
+				</a>
+			</div>
+		</div>
+	</div>
+
+{% else %}
+	<div class="right-blog-post-item">
+		<div class="right-mypost-thumbnail">
+			<div class="right-new-view-img">
+				<a href="{{url}}">
+					<img src="{{file_url(node.field_image.entity.uri.value)}}" alt="Blog-preview">
+				</a>
+				<div class="toptags"></div>
+			</div>
+
+		</div>
+		<div class="right-entry-content">
+			<a href="{{url}}">
+				{{node.field_news_content.value | raw}}
+			</a>
+			<div class="newtimea">
+				<a href="{{url}}" class="blog-date">
+					<div class="timeicon gv-icon-1104"></div>
+					{# 使用经过显示模式sidebar过滤的日期格式而不是node拿到的原始数据 #}
+					{{ content.field_created_at }}
+				</a>
+			</div>`
+		</div>
+
+	</div>
+{% endif %}

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: wide
+label: Wide
+effects:
+  fc74d3d5-f239-4049-b0c8-f6d70ec1ea49:
+    uuid: fc74d3d5-f239-4049-b0c8-f6d70ec1ea49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 860
+      height: 640
+      anchor: center-center

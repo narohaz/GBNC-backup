@@ -1,0 +1,29 @@
+{% if node.field_news_video.entity.field_media_video_file.entity.fileUri %}
+	<a href="{{url}}">
+		<div class="blog-post-item">
+			<div class="mypost-thumbnail">
+				<div class="new-view-video">
+					<video class="new-video" src="{{file_url(node.field_news_video.entity.field_media_video_file.entity.fileUri)}}" loop autoplay muted playsinline></video>
+				</div>
+				<a href="{{url}}" class="blog-date">{{ content.field_created_at }}</a>
+			</div>
+			<div class="entry-content">
+				{{content.field_news_content}}
+			</div>
+		</div>
+	</a>
+{% else %}
+	<a href="{{url}}">
+		<div class="blog-post-item">
+			<div class="mypost-thumbnail">
+				<div class="new-view-img">
+					<img src="{{file_url(node.field_image.entity.uri.value)}}" alt="Blog-preview">
+				</div>
+				<a href="{{url}}" class="blog-date">{{ content.field_created_at }}</a>
+			</div>
+			<div class="entry-content">
+				{{content.field_news_content}}
+			</div>
+		</div>
+	</a>
+{% endif %}
