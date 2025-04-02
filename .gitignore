@@ -1,0 +1,27 @@
+# IDE 和编辑器文件
+.idea/
+.vscode/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# Composer 依赖
+/vendor/
+
+# 数据库备份和敏感信息
+*.sql.gz
+.env
+
+# NPM 依赖
+/node_modules/
+
+# 构建输出
+/dist/
+/build/
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
