@@ -1,4 +1,5 @@
 # IDE 和编辑器文件
+.ddev/
 .idea/
 .vscode/
 

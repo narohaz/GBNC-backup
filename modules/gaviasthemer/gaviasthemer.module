@@ -347,11 +347,31 @@ function gaviasthemer_preprocess_block(&$variables) {
 
 
 
-function gaviasthemer_writecache( $folder, $file, $value, $e='css' ){
-  $file   = $folder  . preg_replace('/[^A-Z0-9\._-]/i', '', $file).'.'.$e ;
+// function gaviasthemer_writecache( $folder, $file, $value, $e='css' ){
+//   $file   = $folder  . preg_replace('/[^A-Z0-9\._-]/i', '', $file).'.'.$e ;
+//   $handle = fopen($file, 'w+');
+//     fwrite($handle, ($value));
+//     fclose($handle);
+// }
+
+function gaviasthemer_writecache($folder, $file, $value, $e='css') {
+  // 确保目录存在
+  if (!is_dir($folder)) {
+    \Drupal::logger('gaviasthemer')->error('目录不存在: @folder', ['@folder' => $folder]);
+    return;
+  }
+
+  $file = $folder . preg_replace('/[^A-Z0-9\._-]/i', '', $file) . '.' . $e;
   $handle = fopen($file, 'w+');
-    fwrite($handle, ($value));
-    fclose($handle);
+
+  if ($handle === false) {
+    // 处理文件打开失败的情况
+    \Drupal::logger('gaviasthemer')->error('无法打开文件: @file', ['@file' => $file]);
+    return;
+  }
+
+  fwrite($handle, $value);
+  fclose($handle);
 }
 
 /**

@@ -59,12 +59,3 @@
 *.ttf     -text diff
 *.woff    -text diff
 *.woff2   -text diff
-
-# 设置默认行为，防止自动行末转换
-* text=auto
-
-# 明确指定文本文件始终标准化为 LF
-*.css text eol=lf
-*.js text eol=lf
-*.html text eol=lf
-*.php text eol=lf

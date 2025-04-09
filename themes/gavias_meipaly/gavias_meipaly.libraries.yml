@@ -151,6 +151,12 @@ gavias_meipaly.skin.yellow:
       css/skins/yellow/bootstrap.css: {}
       css/skins/yellow/template.css: {}
 
+gavias_meipaly.skin.gbnc:
+  version: VERSION
+  css:
+    theme: 
+      css/skins/gbnc/bootstrap.css: {}
+      css/skins/gbnc/template.css: {}
 
 gavias-meipaly-admin:
   version: VERSION

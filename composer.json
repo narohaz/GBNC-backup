@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/asset_injector": "^2.20",
+        "drupal/backup_migrate": "^5.1",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/blocktabs": "^1.0",
         "drupal/core-composer-scaffold": "^10.0",

@@ -223,6 +223,7 @@ function gavias_meipaly_form_system_theme_settings_alter(&$form, &$form_state) {
       'violet_red'  => t('Violet Red'),
       'violet_red2' => t('Violet Red2'),
       'yellow'      => t('Yellow'),
+      'gbnc'        => t('GBNC'),
     ),
   );
 
