@@ -10,6 +10,7 @@ global-styling:
       css/icon-theme.css: {}
       css/animate.css: {}
       css/global.css: {}
+      css/modern-navigation.css: {}
       vendor/owl-carousel/assets/owl.carousel.min.css: {}
       vendor/owl-carousel/assets/owl.theme.default.min.css: {}
       vendor/prettyphoto/css/prettyPhoto.css: {}
@@ -40,6 +41,7 @@ global-styling:
     vendor/jquery.nicescroll.min.js: {}
     vendor/slick/slick.min.js: {}
     js/main.js: {}
+    js/modern-navigation.js: {}
   dependencies:
     - core/jquery
     - core/drupal

@@ -359,4 +359,19 @@ function gavias_meipaly_preprocess_views_view(&$variables){
   }
 }
 
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for menu templates.
+ */
+function gavias_meipaly_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+  // 只为主导航添加特定的模板建议
+  if (isset($variables['menu_name'])) {
+    $menu_name = $variables['menu_name'];
+    
+    // 特别为主导航添加模板建议（仅在非首页）
+    if ($menu_name == 'main' && !\Drupal::service('path.matcher')->isFrontPage()) {
+      $suggestions[] = 'menu__main_navigation';
+    }
+  }
+}
+
 
