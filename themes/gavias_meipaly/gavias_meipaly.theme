@@ -373,5 +373,3 @@ function gavias_meipaly_theme_suggestions_menu_alter(array &$suggestions, array 
     }
   }
 }
-
-
