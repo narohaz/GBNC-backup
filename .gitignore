@@ -33,3 +33,6 @@ sites/default/settings.ddev.php
 .gitignore
 backup-2025-04-14T11-00-48.mysql.gz
 backup-2025-04-14T11-00-48.mysql.gz:Zone.Identifier
+
+sites/default/files/css/*
+sites/default/files/js/*

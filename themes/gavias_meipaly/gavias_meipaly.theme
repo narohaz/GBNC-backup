@@ -373,3 +373,24 @@ function gavias_meipaly_theme_suggestions_menu_alter(array &$suggestions, array 
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_links__language_block().
+ * 为语言切换器添加当前语言信息。
+ */
+function gavias_meipaly_preprocess_links__language_block(&$variables) {
+  // 获取当前语言ID和名称
+  $current_language = \Drupal::languageManager()->getCurrentLanguage();
+  $variables['current_language_id'] = $current_language->getId();
+  $variables['current_language_name'] = $current_language->getName();
+  
+  // 标记当前激活的语言链接
+  if (!empty($variables['links'])) {
+    foreach ($variables['links'] as $key => &$link) {
+      $link_language = substr($key, 9); // 语言链接键通常是'language-x'格式，其中x是语言代码
+      if ($link_language == $variables['current_language_id']) {
+        $link['active'] = TRUE; // 标记当前激活的语言
+      }
+    }
+  }
+}

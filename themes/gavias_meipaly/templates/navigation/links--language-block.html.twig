@@ -38,11 +38,11 @@
     <div class="language-switcher-wrapper">
       <div class="current-language">
         <i class="fas fa-globe"></i> 
-        <span class="active-language">{{ links|first.text }}</span>
+        <span class="active-language">{{ current_language_name }}</span>
       </div>
       <ul class="language-dropdown">
         {%- for key, item in links -%}
-          <li{{ item.attributes.addClass(key|clean_class) }}>
+          <li{{ item.attributes.addClass(key|clean_class) }}{% if item.active %} class="active"{% endif %}>
             {%- if item.link -%}
               {{ item.link }}
             {%- elseif item.text_attributes -%}
