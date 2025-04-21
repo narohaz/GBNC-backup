@@ -18,7 +18,8 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-
+{# 覆写此处模板的作用是覆盖外层的样式，填充本来会左右空余的一段宽度 #}
+{{ attach_library('gavias_meipaly/modern-navigation') }}
 <div class="gva-navigation">
 {% import _self as menus %}
 
