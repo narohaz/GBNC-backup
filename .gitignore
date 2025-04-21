@@ -26,3 +26,8 @@ Thumbs.db
 
 # 临时文件
 *.tmp
+
+# 生成环境配置文件
+sites/default/settings.php
+sites/default/settings.ddev.php
+.gitignore
