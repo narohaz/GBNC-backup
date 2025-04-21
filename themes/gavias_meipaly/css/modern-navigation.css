@@ -1,1 +1,4 @@
 /* 现代化导航栏样式 - 生物医疗网站主题 */
+.gva-navigation{
+    white-space: nowrap;
+}

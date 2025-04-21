@@ -241,4 +241,4 @@ modern-navigation:
     theme:
       css/modern-navigation.css: {}
   js:
-      js/modern-navigation.js: {}
+    js/modern-navigation.js: {}
